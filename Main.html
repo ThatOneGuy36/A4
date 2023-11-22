@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Registration Application</title>
+		<meta charset="UTF-8" />
+		
+		<link rel="stylesheet" href="{{ url_for('static', filename = '../static/IndexStyle.css') }}">
+		<script type = "text/javascript" src = "{{ url_for('static', filename = '../static/Functions.js') }}" ></script>
+	</head>
+
+	<body>
+		<h1 style="text-align: center;"> Current Students </h1>
+		
+		<table id="table">
+			<tr>
+				<th>Student ID</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email</th>
+				<th>Enrollment Date</th>
+			</tr>
+			
+			{% for row in data %}
+			<tr>
+				<td>{{ row[0] }}</td>
+				<td>{{ row[1] }}</td>
+				<td>{{ row[2] }}</td>
+				<td>{{ row[3] }}</td>
+				<td>{{ row[4] }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+		
+		<br><br><br>
+		
+		<button id="addStudent">Add New Student Record</button>
+		<button id="updateStudent">Update Existing Student Record</button>
+		<button id="deleteStudent">Delete Student Record</button>
+		
+		<br><br><br>
+		
+		<form action="/create" method="post" hidden id="addForm" class="forms">
+			<label>First Name:</label><input type="text" name="FirstName" placeholder="Required"><br>
+			<label>Last Name:</label><input type="text" name="LastName" placeholder="Required"> <br>
+			<label>Email:</label><input type="text" name="Email" placeholder="Required"> <br>
+			<label>Enrollment Date:</label><input type="text" name="EnrollmentDate" placeholder="Not required"><br><br>  
+			<input type="submit" value="Create"> 
+		</form>
+		
+		<form action="/delete" method="post" hidden id="deleteForm" class="forms">
+			<label>Student ID:</label><input type="text" name="StudentID" placeholder="Required"><br>  
+			<input type="submit" value="Delete"> 
+		</form>
+		
+		<form action="/update" method="post" hidden id="updateForm" class="forms">
+			<label>Student ID:</label><input type="text" name="StudentID" placeholder="Required"><br>  
+			<label>Email:</label><input type="text" name="Email" placeholder="Required"><br>
+			<input type="submit" value="Update"> 
+		</form>
+		
+	</body>
+</html>

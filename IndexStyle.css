@@ -1,0 +1,59 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+
+	width:-webkit-fill-available;
+	max-width: 80%;
+
+	text-align: center;
+
+	margin-left: 5%;
+	
+	background-color: #EFEFEF;
+}
+
+th {
+	font-size: 18pt;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline green;
+	color: green;
+}
+
+.forms {
+	border: 1px solid black;
+	width: 30%;
+	padding: 12px 20px;
+	outline-style: groove;
+	margin-left: 5%;
+}
+
+input[type=text] {
+	padding: 6px 10px;
+	margin: 8px 10px;
+}
+
+label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	font-weight: bold;
+}
+
+button, input[type=submit] {
+	padding: 6px 10px;
+	margin: 8px 0;
+	font-size: 12pt;
+}
+
+input[type=submit] {
+	position: relative;
+	left: 50%;
+}
+
+body {
+	background-color: #F0EAD6;
+	text-decoration: bold;
+}
