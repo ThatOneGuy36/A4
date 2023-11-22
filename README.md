@@ -6,6 +6,7 @@ My submission for assignment 4 for COMP3005
 1. Install both Flask and psycopg2 using the pip installer for python (version numbers included in the requirements file). Use:
 	- pip install Flask
 	- pip install psycopg2
+
 in the command line before running the application.
 
 2. Download all the files and put them in a new folder together. Place the html files in a folder named 'templates' and the CSS/JavaScript files in a folder named 'static' (these are case sensitive). The python file should be outside of both folders.
