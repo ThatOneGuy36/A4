@@ -1,8 +1,8 @@
 # A4
 My submission for assignment 4 for COMP3005
+<br /><br />
 
-
-Setup Instructions:
+<ins>Setup Instructions:</ins>
 1. Install both Flask and psycopg2 using the pip installer for python (version numbers included in the requirements file). Use:
 	- pip install Flask
 	- pip install psycopg2
@@ -21,15 +21,16 @@ in the command line before running the application.
 	- The port number (likely 5432)
 
 
-
-Steps to Compile and Run Application:
+<br /><br />
+<ins>Steps to Compile and Run Application:</ins>
 1. Navigate to your new folder location in the command prompt window, and type 'python Main.py'
 
 2. Go to the link provided in the line 'Running on http:// ...' to use the application
 
 
+<br /><br />
+<ins>Brief Explanation of each Function:</ins>
 
-Brief Explanation of each Function:
 checkDateValidity:
 - Checks to see if the date inputted was written in a valid format. If so, it returns true, and if not, it handles the error that would be returned and returns false.
 
@@ -49,6 +50,7 @@ addStudent / deleteStudent / updateStudent:
 - Each of these functions will make the corresponding form appear, and disable the other 2 buttons, allowing the user to perform only 1 operation at a time.
 
 
+<br /><br />
+<ins>Link to Video Explanation:</ins>
 
-Link to Video Explanation:
 https://youtu.be/Gl3Hby8eaL8
